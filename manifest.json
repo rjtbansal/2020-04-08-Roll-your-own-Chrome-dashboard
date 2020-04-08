@@ -1,0 +1,9 @@
+{
+  "name": "Best News Extension",
+  "description" : "Learning to build an extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  }
+}
