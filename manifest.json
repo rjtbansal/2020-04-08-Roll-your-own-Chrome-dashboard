@@ -3,7 +3,15 @@
   "description" : "Learning to build an extension",
   "version": "1.0",
   "manifest_version": 2,
+  "permissions": [
+    "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+],
+"background": {
+  "scripts": ["index.js"],
+  "persistent": false
+},
   "chrome_url_overrides" : {
     "newtab": "index.html"
-  }
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'"
 }
