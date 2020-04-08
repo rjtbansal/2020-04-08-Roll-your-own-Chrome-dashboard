@@ -12,8 +12,9 @@ const api_key = news_api_key.api_key;
 
 const generateLi = (newsItem) => {
   const li = document.createElement('li');
-  li.innerHTML = `<h3>${newsItem.title}</h3>
-   <img class="news__image" src=${newsItem.urlToImage} alt="Image missing" />
+  li.innerHTML = `<h2>${newsItem.title}</h2>
+   <h3> ${newsItem.description} </h3>
+   <img class="news__image" src=${newsItem.urlToImage} alt="Image missing" /><br/>
    <a href=${newsItem.url} target="_blank"> Read More! </a>
   `;
   return li;
